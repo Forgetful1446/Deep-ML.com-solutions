@@ -1,0 +1,12 @@
+import numpy as np
+
+def make_diagonal(x):
+
+	vectorLength = len(x)
+
+	diagonal = [[0.0 for _ in range(vectorLength)] for _ in range(vectorLength)]
+
+	for i in range(vectorLength):
+		diagonal[i][i] = float(x[i])
+	
+	return diagonal
